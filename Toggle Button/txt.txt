@@ -1,0 +1,3 @@
+Here we seen a new defer tag which don't stop the html page from rendaring 
+It executes the JS after the whole HTML doc is parsed.
+one cursor icon in the css so we can make clickable to our toggle button 
