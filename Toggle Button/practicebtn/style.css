@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    margin-right: 10px;
+}
+
+#toggleButton {
+    font-size: 30px;
+    cursor: pointer;
+}
