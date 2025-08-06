@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.container{
+    display: flex;
+    height: 200px;
+   align-items: center;
+    border: 2px solid black;
+    width: 100%;
+    justify-content: center;
+      gap: 10px;
+}
+
+.red{
+    border: 2px solid wheat;
+    background: red;
+    height: 190px;
+    width: 100%;
+    cursor: pointer;
+}
+.blue{
+    border: 2px solid wheat;
+    background: blue;
+    height: 190px;
+    width: 100%;
+    cursor: pointer;
+}
+.green{
+    border: 2px solid wheat;
+    background: green;
+    height:190px;
+    width: 100%;
+    cursor: pointer;
+}
+.pink{
+    border: 2px solid wheat;
+    background: pink;
+    height: 190px;
+    width: 100%;
+    cursor: pointer;
+}
