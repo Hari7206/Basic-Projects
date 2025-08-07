@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    background-color: rgb(86, 171, 245);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+.container{
+    border: 2px solid wheat;
+    padding: 26px;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: 300;
+}
