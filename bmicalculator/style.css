@@ -1,0 +1,39 @@
+*{
+    position: 0;
+    margin: 0;
+}
+
+body {
+    background-color: black;
+    color: #fff;
+    
+    place-items: start center;
+}
+
+.container {
+     padding: 300px 40px;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+#btn {
+    margin-top:  30px;
+    padding: 5px;
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 9px;
+}
+.btn {
+    margin-left: 10px;
+    margin-top:  30px;
+    padding: 5px;
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 9px;
+}
+#normal {
+    margin-top:  10px;
+}
