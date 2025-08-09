@@ -12,7 +12,7 @@ btn.addEventListener('click' , () => {
     }
      height = height / 100;
    let  BMI = weight  / (height * height)
-    BMI = BMI.toFixed(2); // round to 2 decimal places
+    BMI = BMI.toFixed(2); // round to 2 decimal place
 result.innerHTML = `Your BMI is ${BMI}`;
 
 })
