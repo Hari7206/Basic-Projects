@@ -1,0 +1,31 @@
+body{
+    background-color: rgba(0, 255, 255, 0.226);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.box{
+    background-color: rgba(0, 255, 242, 0.281);
+    height: 340px;
+    width: 600px;
+}
+h1 {
+   margin-left: 20px; 
+}
+#Character{
+    margin-left: 20px;
+    resize: none;
+    height: 200px;
+    width: 90%;
+}
+
+p {
+    margin-left: 20px;
+}
+
+.box:hover {
+  background-color: rgba(0, 200, 200, 0.4); /* change color on hover */
+  cursor: pointer; /* optional, makes it look clickable */
+}
