@@ -1,14 +1,21 @@
+let personInput = document.querySelector('.person');
+let result = document.querySelector('.result');
+let btn = document.querySelector('.btn');
 
-const person = document.querySelector('.person')
+btn.addEventListener('click', () => {
+    let bill = parseFloat(document.querySelector('.bill').value);
+    let tipPercent = parseFloat(document.querySelector('.tip').value);
+    let personCount = parseFloat(personInput.value);
 
-const result = document.querySelector('.result')
-const btn = document.querySelector('.btn')
-btn.addEventListener('click' , () =>{
-    const bill = document.querySelector('.bill').value
-   const tip = document.querySelector('.tip').value
-bill = bill * (tip  / 100);
-let totalBill = bill + tip
-person =  totalBill / person;
-})
+    // Basic check to avoid NaN or divide by zero
+    if (isNaN(bill) || isNaN(tipPercent) || isNaN(personCount) || personCount <= 0) {
+        result.innerHTML = "Enter valid numbers!";
+        return;
+    }
 
-result.innerHTML = `${totalBill}`
+    let tipAmount = tipPercent
+    let totalBill = bill + tipAmount;
+    let perPerson = totalBill / personCount;
+
+    result.innerHTML = perPerson.toFixed(2);
+});
