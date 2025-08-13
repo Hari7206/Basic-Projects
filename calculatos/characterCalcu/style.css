@@ -1,31 +1,47 @@
-body{
+/* Make body center the container */
+body {
     background-color: rgba(0, 255, 255, 0.226);
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     height: 100vh;
+    margin: 0; /* remove default body margin */
+    font-family: sans-serif;
 }
 
-.box{
+/* Box styling */
+.box {
     background-color: rgba(0, 255, 242, 0.281);
     height: 340px;
     width: 600px;
-}
-h1 {
-   margin-left: 20px; 
-}
-#Character{
-    margin-left: 20px;
-    resize: none;
-    height: 200px;
-    width: 90%;
-}
-
-p {
-    margin-left: 20px;
+    padding: 20px; 
+    box-sizing: border-box; 
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+    transition: background-color 0.3s;
 }
 
 .box:hover {
-  background-color: rgba(0, 200, 200, 0.4); /* change color on hover */
-  cursor: pointer; /* optional, makes it look clickable */
+    background-color: rgba(0, 200, 200, 0.4);
+    cursor: pointer;
+}
+
+h1 {
+    margin: 0; 
+}
+
+/* Input styling */
+#Character {
+    resize: none;
+    height: 200px;
+    width: 100%; 
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+
+p {
+    margin: 0; 
+    display: inline;
 }
