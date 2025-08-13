@@ -1,0 +1,77 @@
+body {
+    height: 100vh;
+        background: linear-gradient(145deg, #1e344d, #141e30);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+
+.container {
+    background-color: #fff;
+    height: 500px;
+    width: 500px;
+}
+.inputbox > * {
+    margin-left: 10px;
+    margin-top: 40px;
+}
+
+h1{
+    text-align: center;
+}
+.styled-input {
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+    font-size: 16px;
+    padding: 5px;
+    background-color: transparent;
+}
+
+.inputbox{
+    font-size: larger;
+    gap: 40px;
+  
+}
+.calculate{
+     font-size: medium;
+      height: 30px;
+    display: flex;
+    display: inline-block;
+    width: 80%;
+   background: linear-gradient(145deg, #1e344d, #141e30); 
+   color: white;
+}
+.btns {
+    text-align: center;
+}
+.Reset{
+    font-size: medium;
+    margin-top: 10px;
+    height: 30px;
+    text-align: center;
+    display: inline-block;
+    width: 80%;
+   background: linear-gradient(145deg, #295588, #141e30); 
+   color: white;
+}
+
+.inputbox {
+
+    justify-content: space-evenly;
+}
+
+.formrow{
+    display: flex;
+    justify-content: space-evenly;
+}
+select{
+    width: 40%;
+}
+
+.Reset:hover{
+     background: linear-gradient(145deg, #1e344d, #134fbe);
+}
+.calculate:hover{
+     background: linear-gradient(145deg, #1e344d, #134fbe);
+}
