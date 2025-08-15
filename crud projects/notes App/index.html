@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Notes App</title>
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1>YOuR NoTeS</h1>
+            <p>APne Notes Apne SaTh</p>
+        </header>
+
+        <div class="toolbar">
+            <input type="text" id="search-input" placeholder="Search Notes...">
+            <div class="filter-dropdown">
+                <select id="filter-select">
+                    <option value="all">All notes</option>
+                    <option value="work">Work</option>
+                    <option value="personal">Personal</option>
+                    <option value="ideas">Ideas</option>
+                    <option value="reminders">Reminders</option>
+                </select>
+            </div>
+            <button class="add-note-btn">+ Add</button>
+        </div>
+
+        <main id="notes-container">
+            <div class="note-card">
+                <h3 class="note-title">My First Note</h3>
+                <p class="note-content">This is a sample note to see how the layout will look. More notes will be added using JavaScript!</p>
+                <footer>
+                    <span class="note-tag">Personal</span>
+                    <span class="note-timestamp">15-08-2025</span>
+                </footer>
+            </div>
+        </main>
+
+        <div class="modal-overlay">
+            <div class="modal-content">
+                <button class="close-modal-btn">❌</button>
+                <h2>New Note</h2>
+                <form id="add-note-form">
+                    <div class="form-group">
+                        <label for="note-title-input">Title</label>
+                        <input type="text" id="note-title-input" placeholder="Enter note title">
+                    </div>
+                    <div class="form-group">
+                        <label for="note-content-input">Content</label>
+                        <textarea id="note-content-input" placeholder="Enter note content..."></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>Tags</label>
+                        <div class="tags-container">
+                            <button type="button" class="tag-btn">👜 Work</button>
+                            <button type="button" class="tag-btn">🚹 Personal</button>
+                            <button type="button" class="tag-btn">💡 Ideas</button>
+                            <button type="button" class="tag-btn">⌚ Reminders</button>
+                        </div>
+                    </div>
+                    <button type="submit" class="save-note-btn">Save Note</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
