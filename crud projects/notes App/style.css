@@ -1,0 +1,71 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #c0c0c038;
+}
+
+h1 {
+    margin-top: 30px;
+    text-align: center;
+    color: rgba(98, 0, 255, 0.89);
+}
+
+#headtitile {
+    margin-top: 20px;
+    color: #5c4b4b;
+    text-align: center;
+    font-size: 20px;
+}
+.toolbar {
+    border-radius: 7px;
+    height: 50px;
+    width: 80%;
+    margin-top: 30px;
+    margin: 50px auto; 
+    background-color: #fff;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+    box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.2);
+}
+#search-input{
+    border: 0.5px solid #5c4b4b46;
+ border-radius: 10px;
+width: 85%;
+height: 37px;
+padding-left: 5px;
+
+}
+.add-note-btn{
+    color: #fff;
+     background-color: rgba(25, 0, 255, 0.781);
+ border: 0.5px solid #5c4b4b46;
+ border-radius: 10px;
+    width: 70px;
+    height: 40px;
+    cursor: pointer;
+}
+.add-note-btn:hover {
+    border: 2px solid rgba(25, 0, 255, 0.781);
+     background-color: rgba(25, 0, 255, 0.699);
+}
+
+#filter-select{
+   
+     border: 0.5px solid #5c4b4b46;
+ border-radius: 10px;
+     border-radius: 10px;
+    width: 75px;
+height: 40px;
+}
+
+#filter-select option {
+  background-color: silver;
+  color: black;
+}
+
