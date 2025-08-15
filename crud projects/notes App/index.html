@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
     <title>Notes App</title>
 </head>
@@ -27,9 +28,16 @@
             <button class="add-note-btn">+ Add</button>
         </div>
 
+
         <main id="notes-container">
             <div class="note-card">
-                <h3 class="note-title">My First Note</h3>
+                <div class="cardhead">
+                    <h3 class="note-title">My First Note</h3>
+                    <button id="card-trash">
+                        <i class="fa-solid fa-trash" id="card-trash"></i>
+                    </button>
+                </div>
+
                 <p class="note-content">This is a sample note to see how the layout will look. More notes will be added using JavaScript!</p>
                 <footer>
                     <span class="note-tag">Personal</span>
@@ -38,9 +46,10 @@
             </div>
         </main>
 
+        
         <div class="modal-overlay">
             <div class="modal-content">
-                <button class="close-modal-btn">❌</button>
+                <button class="close-modal-btn"><i class="fa-solid fa-xmark"></i></button>
                 <h2>New Note</h2>
                 <form id="add-note-form">
                     <div class="form-group">
