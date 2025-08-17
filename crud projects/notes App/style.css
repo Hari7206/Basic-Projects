@@ -118,3 +118,10 @@ color: rgb(134, 134, 134);
       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+/*  card  */
+.modal-overlay{
+    width: 50%;
+      margin: 50px auto;
+    background-color: #fff;
+
+}
