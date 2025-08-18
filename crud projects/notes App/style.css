@@ -78,14 +78,10 @@ h1 {
 
 #notes-container {
     display: grid;
-    /* This makes the grid responsive */
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 20px; /* This adds space between your note cards */
-    width: 80%; /* This matches your toolbar width */
-    margin: 40px auto; /* This centers the container */
-    box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.2);
-    cursor: pointer;
-    border-radius: 3%;
+    gap: 20px;
+    width: 80%;
+    margin: 40px auto;
 }
 #notes-container:hover{
     box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.4);
