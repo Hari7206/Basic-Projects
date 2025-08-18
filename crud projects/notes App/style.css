@@ -77,12 +77,12 @@ h1 {
 
 
 #notes-container {
-    padding: 10px;
-    padding: auto;
-    background-color: #fff;
-    margin-left: 9%;
-    height: 45%;
-    width: 20%;
+    display: grid;
+    /* This makes the grid responsive */
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px; /* This adds space between your note cards */
+    width: 80%; /* This matches your toolbar width */
+    margin: 40px auto; /* This centers the container */
     box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.2);
     cursor: pointer;
     border-radius: 3%;
@@ -90,8 +90,18 @@ h1 {
 #notes-container:hover{
     box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.4);
 }
+.note-card {
+    background-color: #fff; /* Added from your original container style */
+    padding: 10px;        /* Added from your original container style */
+    box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    border-radius: 4%;
+}
+.note-card:hover {
+    box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.4);
+}
 
-#card-trash {
+.card-trash {
     color: rgb(197, 191, 191);
     background-color: transparent;
     border: none;       
@@ -100,7 +110,7 @@ h1 {
     outline: none;       
 }
 
-#card-trash:hover {
+.card-trash:hover {
     background-color: transparent; 
 }
 .cardhead{
@@ -118,10 +128,166 @@ color: rgb(134, 134, 134);
       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-/*  card  */
-.modal-overlay{
-    width: 50%;
-      margin: 50px auto;
-    background-color: #fff;
 
+.modal-overlay{
+  display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+
+
+}
+.modal-content {
+    width: 450px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.head{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 10px 20px 10px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+#add-note-form{
+   padding: 10px 20px 10px 20px;
+}
+#add-note-form> * {
+  margin-top: 20px; /* every child inside parent will get top margin */
+}
+#title{
+    color: rgb(92, 90, 90);
+    font-size: 15px;
+    display: block;
+}
+#note-title-input {
+    margin-top: 10px;
+  width: 90%; 
+  height: 30px;
+  border-radius: 8px;
+  border: 1px solid #c0c0c0; 
+  padding: 5px 10px;
+  outline: none; 
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+#note-title-input:focus {
+  border-color: #a56eff; 
+  box-shadow: 0 0 5px rgba(165, 110, 255, 0.5);
+}
+#content{
+    margin-top: 30px;
+    color: rgb(92, 90, 90);
+    font-size: 15px;
+    display: block;
+}
+#note-content-input{
+        margin-top: 10px;
+  width: 90%; 
+  height: 70px;
+  border-radius: 8px;
+  border: 1px solid #c0c0c0; 
+  padding: 5px 10px;
+  outline: none; 
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+#note-content-input:focus{
+    color: #a56eff;
+     box-shadow: 0 0 10px rgba(165, 110, 255, 0.5);
+}
+.tags > *{
+    margin-top: 20px;
+   
+}
+.labletag{
+    color: rgb(92, 90, 90);
+    font-size: 15px;
+    display: block;
+     margin-bottom: 10px;
+}
+.tags-container > *{
+   text-align: center;
+   font-weight: 400;
+    height: 30px;
+    width: 94px;
+    font-size: 13px;
+    margin-top: 1px;
+     margin-right: 2px;
+    padding: 3px;
+    border-radius: 40px;
+     outline: none;
+     margin-bottom: 10px;
+     cursor: pointer;
+}
+#work{
+    background-color: rgba(106, 132, 250, 0.685);
+    color: rgb(25, 0, 255);
+    outline: none;
+   border: 1px solid #c0c0c0; 
+}   
+#work:hover{
+   background-color: rgba(0, 132, 255, 0.301);
+    border: 2px solid navy;
+}
+#Personal{
+    background-color: rgba(106, 132, 250, 0.39);
+    color: purple;
+    outline: none;
+   border: 1px solid #c0c0c0; 
+}   
+#Personal:hover{
+    border: 2px solid purple;
+     background-color: rgba(106, 132, 250, 0.13);
+    color: purple;
+}
+#Ideas{
+    background-color:rgba(0, 128, 0, 0.445);
+    color:white;
+    outline: none;
+   border: 1px solid #c0c0c0; 
+}   
+#Ideas:hover{
+     background-color:rgba(0, 128, 0, 0.651);
+    color:white;
+    border: 2px solid green;
+}
+#Reminders{
+    background-color: rgba(236, 250, 106, 0.411);
+   color: #5c4b4b;
+    outline: none;
+   border: 1px solid #c0c0c0; 
+}   
+#Reminders:hover{
+     background-color: rgba(236, 250, 106, 0.623);
+   color: #5c4b4b;
+    border: 1px solid rgba(236, 250, 106, 0.623) ;
+}
+.save-note-btn{
+    background: rgba(0, 0, 255, 0.486);
+    color: white;
+    border: 1px;
+   border-radius: 5px;
+    height: 35px;
+    margin-top: 20px;
+    width: 100%;
+      transition: border-color 0.3s, box-shadow 0.3s;
+      cursor: pointer;
+}
+.save-note-btn:focus{
+  color: white;
+  border: 1 px solid navy;
+}
+.save-note-btn:hover{
+    background: blue;
+}
+.close-modal-btn{
+    cursor: pointer;
+    color: rgb(141, 138, 138);
+    border: none;
+    background-color: transparent;
 }

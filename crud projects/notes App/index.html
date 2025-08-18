@@ -33,7 +33,7 @@
             <div class="note-card">
                 <div class="cardhead">
                     <h3 class="note-title">My First Note</h3>
-                    <button id="card-trash">
+                    <button class="card-trash">
                         <i class="fa-solid fa-trash" id="card-trash"></i>
                     </button>
                 </div>
@@ -49,25 +49,31 @@
         
         <div class="modal-overlay">
             <div class="modal-content">
-                <button class="close-modal-btn"><i class="fa-solid fa-xmark"></i></button>
-                <h2>New Note</h2>
+               <div class="head">
+                 <h2>New Note</h2>
+                  <button class="close-modal-btn"><i class="fa-solid fa-xmark"></i></button>
+                 
+               </div>
+                <hr>
                 <form id="add-note-form">
                     <div class="form-group">
-                        <label for="note-title-input">Title</label>
+                        <label for="note-title-input" id="title">Title</label>
                         <input type="text" id="note-title-input" placeholder="Enter note title">
                     </div>
                     <div class="form-group">
-                        <label for="note-content-input">Content</label>
+                        <label for="note-content-input" id="content">Content</label>
                         <textarea id="note-content-input" placeholder="Enter note content..."></textarea>
                     </div>
-                    <div class="form-group">
-                        <label>Tags</label>
+                    <div class="tags">
+                        <div class="form-group">
+                        <label class="labletag">Tags</label>
                         <div class="tags-container">
-                            <button type="button" class="tag-btn">👜 Work</button>
-                            <button type="button" class="tag-btn">🚹 Personal</button>
-                            <button type="button" class="tag-btn">💡 Ideas</button>
-                            <button type="button" class="tag-btn">⌚ Reminders</button>
+                            <button type="button" class="tag-btn" id="work">👜 Work</button>
+                            <button type="button" class="tag-btn" id="Personal">🚹 Personal</button>
+                            <button type="button" class="tag-btn" id="Ideas">💡 Ideas</button>
+                            <button type="button" class="tag-btn" id="Reminders">⌚ Reminders</button>
                         </div>
+                    </div>
                     </div>
                     <button type="submit" class="save-note-btn">Save Note</button>
                 </form>
