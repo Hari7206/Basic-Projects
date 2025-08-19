@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f1f5f9;
+    font-family: system-ui, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.container {
+    width: 100%;
+    max-width: 650px;
+    background: #fff;
+    border-radius: 12px;
+    padding: 2.5rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+h1, h2, h3 {
+    color: #1e293b;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    color: #64748b;
+    line-height: 1.6;
+}
+
+.theme-options {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.theme-btn {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 4px solid #fff;
+    box-shadow: 0 0 0 1px #cbd5e1;
+    transition: transform 0.2s ease;
+}
+
+.theme-btn:hover {
+    transform: scale(1.1);
+}
+
+.theme-btn[data-theme="blue"] {
+    background-color: #3b82f6;
+}
+
+.theme-btn[data-theme="dark"] {
+    background-color: #334155;
+}
+
+.theme-btn[data-theme="green"] {
+    background-color: #22c55e;
+}
+
+.theme-btn[data-theme="red"] {
+    background-color: #ef4444;
+}
+
+main section {
+    margin-top: 2rem;
+}
+
+.interactive-card {
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-top: 1rem;
+}
+
+.primary-action-btn {
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background-color 0.2s ease;
+}
+
+.primary-action-btn:hover {
+    background-color: #2563eb;
+}
