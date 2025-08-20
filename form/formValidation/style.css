@@ -1,0 +1,99 @@
+body {
+    background-color: #1E90FF;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; 
+}
+
+form {
+    width: 100%;
+    max-width: 400px; 
+    background-color: #fff;
+    padding: 30px 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2); 
+}
+
+form > * {
+    margin-bottom: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #000;
+}
+
+input {
+    margin-top: 10px;
+    width: 100%; 
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    height: 45px;
+    background: #0000FF;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+button:hover {
+    background: #0000cc;
+}
+
+
+@media (max-width: 768px) {
+    form {
+        padding: 20px;
+    }
+    h1 {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    form {
+        padding: 15px;
+    }
+    input, button {
+        font-size: 0.9rem;
+    }
+}
+.error-msg {
+    color: #ff3860;
+    font-size: 0.8rem;
+    margin-top: 5px;
+}
+
+.inputgrp.error input,
+.inputgrp2.error input,
+.mail.error input,
+.ph.error input,
+.pass.error input,
+.confirm-pass.error input {
+    border-color: #ff3860;
+}
+
+.inputgrp.success input,
+.inputgrp2.success input,
+.mail.success input,
+.ph.success input,
+.pass.success input,
+.confirm-pass.success input {
+    border-color: #09c372;
+}

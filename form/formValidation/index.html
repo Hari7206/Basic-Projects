@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Form Validation</title>
+</head>
+<body>
+    <div class="container">
+        <form action=" " id="form">
+            <h1>Create Your Account </h1>
+            
+            <div class="inputgrp">
+                <label for="firstName">First Name</label><br>
+                <input type="text" placeholder="eg -: Hari " id="firstName"><br>  
+                <div class="error-msg"></div>
+            </div>
+
+            <div class="inputgrp2">
+                <label for="lastName">Last Name </label><br>
+                <input type="text" placeholder="eg -: Thapa " id="lastName"><br>
+                <div class="error-msg"></div>
+            </div>
+
+            <div class="mail">
+                <label for="email">Email id</label><br>
+                <input type="email" placeholder="enter your email" id="email"><br>
+                <div class="error-msg"></div>
+            </div>
+
+            <div class="ph">
+                <label for="mobileno">Phone Number</label><br>
+                <input type="tel" placeholder="enter your mobile no" id="mobileno"><br>
+                <div class="error-msg"></div>
+            </div>
+
+            <div class="pass">
+                <label for="Password">Password</label><br>
+                <input type="password" placeholder="enter your Password" id="Password"><br>
+                <div class="error-msg"></div>
+            </div>
+
+            <div class="confirm-pass">
+                <label for="confirmPassword">Confirm Password</label><br>
+                <input type="password" placeholder="enter your Password" id="confirmPassword"><br>
+                <div class="error-msg"></div>
+            </div>
+
+            <button type="submit" id="btn">Sign up</button>
+    
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
