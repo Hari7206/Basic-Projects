@@ -1,0 +1,70 @@
+body{
+        background-color: #000080;
+}
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.quizApp{
+    border-radius: 1px;
+    padding: 20px;
+    width: 600px;
+    height: 500px;
+    background: #fff;
+     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+}
+h1 , h2
+{
+   color: #000080;
+}
+.answerButton > *{
+    border: 0.1px solid;
+    border-radius: 10px ;
+    height:  35px;
+    width: 100%;
+    margin-bottom: 20px;
+    display: block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.answerButton > *:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+#next-btn{
+        border: none;
+        background-color: #000080;
+        color: #fff;
+        height: 30px;
+      width: 130px;
+      margin: 0 auto;
+      margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+#score-display{
+    background: rgb(122, 192, 122);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#score-text{
+    color: #000080;
+    display: block;
+    font-size: larger;
+    font-weight: 300px;
+}
+
+#play-again-btn{
+    display: block;
+   border: none;
+        background-color: #000080;
+        color: #fff;
+        height: 30px;
+      width: 130px;    
+}
