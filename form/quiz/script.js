@@ -2,7 +2,6 @@ const questionElement = document.getElementById("question");
 const answerButtons = document.querySelector(".answerButton");
 const nextBtn = document.getElementById("next-btn");
 
-// Storing the quiz container and score display elements for the final step
 const quizContainer = document.querySelector(".quiz");
 const scoreDisplay = document.getElementById("score-display");
 const scoreText = document.getElementById("score-text");
@@ -42,18 +41,17 @@ const questions = [
 let currentQuestionIndex = 0;
 let score = 0;
 
-// Function to start or restart the quiz
+
 function startQuiz() {
     currentQuestionIndex = 0;
     score = 0;
     nextBtn.innerHTML = "Next";
-    // Show the quiz and hide the score screen
+    
     quizContainer.style.display = "block";
     scoreDisplay.style.display = "none";
     showQuestion();
 }
 
-// Function to display a question and its answers
 function showQuestion() {
     nextBtn.style.display = "none";
     let currentQuestion = questions[currentQuestionIndex];
@@ -73,7 +71,7 @@ function showQuestion() {
     });
 }
 
-// Function that runs when an answer is selected
+
 function selectAnswer(e) {
     const selectedBtn = e.target;
     const isCorrect = selectedBtn.dataset.correct === "true";
@@ -95,7 +93,7 @@ function selectAnswer(e) {
     nextBtn.style.display = "block";
 }
 
-// Function to handle the 'Next' button click
+
 function handleNextButton() {
     currentQuestionIndex++;
     if (currentQuestionIndex < questions.length) {
@@ -105,21 +103,19 @@ function handleNextButton() {
     }
 }
 
-// Function to display the final score
+
 function showScore() {
-    // Hide the quiz and show the score screen
     quizContainer.style.display = "none";
-    scoreDisplay.style.display = "flex"; // Use 'flex' as per your CSS
+    scoreDisplay.style.display = "flex"; 
 
     scoreText.innerHTML = `You scored ${score} out of ${questions.length}!`;
 }
 
 
-// Event listener for the next button
+
 nextBtn.addEventListener("click", handleNextButton);
 
-// Event listener for the play again button
+
 playAgainBtn.addEventListener("click", startQuiz);
 
-// Initial call to start the quiz when the page loads
 startQuiz();
